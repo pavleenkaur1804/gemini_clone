@@ -28,7 +28,7 @@
     margin: 50px 0;
     font-size: 56px;
     color: #c4c7c5;
-    font-weight: 500;
+    font-weight: 300;
     padding: 20px;
 }
 
@@ -40,7 +40,7 @@
 
 .main .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 15px;
     padding: 20px;
 }
@@ -74,13 +74,13 @@
 }
 
 .main .bottom {
+    position: absolute;
     bottom: 0;
     width: 100%;
     max-width: 900px;
-    padding: 0 20px;
+    padding: 0px 20px;
     margin: auto;
     background-color: black;
-    
 }
 
 .search-box {
@@ -91,13 +91,6 @@
     background-color: #212121;
     padding: 10px 20px;
     border-radius: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
-    
 }
 
 .search-box img {
@@ -201,8 +194,5 @@
         gap: 5px; /* Adjusted gap for smaller screens */
     }
 }
-/* Prevent horizontal scrolling */
-body {
-    overflow-x: hidden;
-}
+
 

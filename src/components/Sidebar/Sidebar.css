@@ -2,13 +2,13 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 10%;
     background-color: #212121;
     padding: 25px 15px;
+    gap: 20px;
 }
 
 .sidebar img {
-    width: 20px;
+    width: 18px;
 }
 
 .sidebar .menu {
@@ -16,9 +16,12 @@
     margin-left: 10px;
     cursor: pointer;
 }
-
+.sidebar .middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .sidebar .new-chat {
-    margin-top: 1px;
     display: flex; /* Change display to flex */
     align-items: center;
     gap: 10px;

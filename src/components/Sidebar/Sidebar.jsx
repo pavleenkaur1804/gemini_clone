@@ -14,15 +14,16 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar">
+
             <div className='top'>
                 <img onClick={() => setExtended(prev => !prev)}
                     className="menu"
                     src='https://firebasestorage.googleapis.com/v0/b/gemini-aiclone.appspot.com/o/Gemini_clone_logo%20(2).png?alt=media&token=9bbe623a-5637-4d65-a0ed-69b0bb0389d6'
                     alt='logo' />
             </div>
-            <div className="middle">
+            <div className='middle'>
             <div
-                onClick={() => newChat()}
+                onClick={() => newChat}
                 className='new-chat'>
                 <img alt='chat_icon'
                     src='https://firebasestorage.googleapis.com/v0/b/gemini-aiclone.appspot.com/o/Gemini_clone_logo%20(4).png?alt=media&token=fd6df8c3-88e0-44a7-9f02-d32654b0e913' />
@@ -45,6 +46,7 @@ const Sidebar = () => {
 
             </div> : null}
             </div>
+           
 
             <div className='bottom'>
                 <div className='bottom-item recent-entry'>
