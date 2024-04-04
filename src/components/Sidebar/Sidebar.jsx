@@ -23,7 +23,7 @@ const Sidebar = () => {
             </div>
             <div className='middle'>
             <div
-                onClick={() => newChat}
+                onClick={() => newChat()}
                 className='new-chat'>
                 <img alt='chat_icon'
                     src='https://firebasestorage.googleapis.com/v0/b/gemini-aiclone.appspot.com/o/Gemini_clone_logo%20(4).png?alt=media&token=fd6df8c3-88e0-44a7-9f02-d32654b0e913' />
