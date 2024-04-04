@@ -1,0 +1,90 @@
+.sidebar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    background-color: #212121;
+    padding: 25px 15px;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat {
+    margin-top: 1px;
+    display: flex; /* Change display to flex */
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #424242;
+    border-radius: 50px;
+    font-size: 15px;
+    color: #eff0f4; /* Change text color */
+    cursor: pointer;
+}
+
+.sidebar .recent {
+    animation: fadeIn 1.5s;
+}
+
+.sidebar .recent-title {
+    color: #e2e2e2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10%;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Adjust alignment */
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #424242;
+}
+
+.sidebar .bottom {
+    position: fixed;
+    padding: 1%;
+    margin-bottom: 2%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar .bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+.sidebar{
+    display: none;
+}
+      .content {
+        margin-left: 0;
+      }
+      .bottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+}
+/* These changes should help ensure that the sidebar fits within the screen properly and provides vertical scrolling if needed. Adjustments such as changing the height to `100vh`, using `flex` for alignment, and ensuring appropriate text colors are made. */
